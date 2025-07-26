@@ -1,1 +1,57 @@
-<h1>calculator</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .calculator {
+      display: inline-block;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input[type="text"] {
+      width: 220px;
+      font-size: 24px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    .buttons button {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+  <input type="text" id="display" readonly>
+  <div class="buttons">
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="appendValue('/')">/</button>
+    <button onclick="appendValue('*')">*</button>
+    <button onclick="appendValue('-')">-</button><br>
+
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('+')">+</button><br>
+
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="calculate()">=</button><br>
+
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</butto
+
